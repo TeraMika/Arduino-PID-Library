@@ -60,6 +60,9 @@ class PID
 	int GetMode();						  //  inside the PID.
 	int GetDirection();					  //
 
+  double GetOutputSum();  // For additional PID information-gathering
+  double GetLastInput();
+
   private:
 	void Initialize();
 	
